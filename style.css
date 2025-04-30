@@ -6,25 +6,31 @@
 
 html, body {
   height: 100%;
+  width: 100%;
   font-family: Arial, sans-serif;
-}
-
-body {
-  background: url('pyramids.jpg') no-repeat center center fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: white;
+  background-color: black; /* fallback */
+}
+
+.background {
+  width: 1280px;
+  height: 720px;
+  background: url('pyramids.jpg') no-repeat center center;
+  background-size: 1280px 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .content {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 12px;
+  color: white;
+  text-align: center;
 }
 
 .logo {
