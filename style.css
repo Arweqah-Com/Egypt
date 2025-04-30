@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background: url('pyramids.jpg') no-repeat center center fixed;
+  background: url('pyramids.png') no-repeat center center fixed;
   background-size: contain; /* Fit image fully */
   background-repeat: no-repeat;
   background-position: center;
