@@ -37,6 +37,25 @@ button:hover {
   background-color: #0056b3;
 }
 
+#backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#backButton:hover {
+  background-color: #0056b3;
+}
+
+
 /* Dashboard iframe styling */
 #dashboard {
   position: absolute;
