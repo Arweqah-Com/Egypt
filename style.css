@@ -8,29 +8,25 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black; /* fallback */
+  background-color: black; /* for letterbox effect */
 }
 
-.background {
-  width: 1280px;
-  height: 720px;
-  background: url('pyramids.jpg') no-repeat center center;
-  background-size: 1280px 720px;
+body {
+  background: url('pyramids.jpg') no-repeat center center fixed;
+  background-size: contain; /* Fit image fully */
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .content {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 12px;
-  color: white;
-  text-align: center;
 }
 
 .logo {
