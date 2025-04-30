@@ -8,22 +8,20 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
-  background-color: black; /* for letterbox effect */
+  background-color: black; /* Letterbox effect for non-16:9 screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 body {
   background: url('pyramids.png') no-repeat center center fixed;
-  background-size: contain; /* Fit image fully */
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+  background-size: contain; /* Ensures the full image fits */
 }
 
-.enter-btn {
+/* Button Styling */
+button {
   padding: 16px 32px;
   font-size: 20px;
   color: white;
@@ -31,29 +29,27 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
+  z-index: 10;
 }
 
-.enter-btn:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-.content {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 12px;
+/* Dashboard iframe styling */
+#dashboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 5;
 }
 
-.logo {
-  width: 150px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 20px;
+#dashboard iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
